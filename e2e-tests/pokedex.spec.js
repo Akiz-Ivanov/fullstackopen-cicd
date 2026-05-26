@@ -11,4 +11,4 @@ describe('Pokedex', () => {
     await page.goto('/pokemon/ivysaur')
     await expect(page.getByText('chlorophyll')).toBeVisible()
   })
-})
+}) 
