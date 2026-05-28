@@ -2,7 +2,6 @@ name: Periodic Hello
 
 on:
   workflow_dispatch:
-  pull_request:
   schedule:
     - cron: '*/15 * * * *'
 
@@ -13,6 +12,6 @@ jobs:
       - name: Check deployed application
         uses: jtalk/url-health-check-action@v5
         with:
-          url: https://fullstackopen-cicd-njjg.onrender.com/nonexistent
+          url: https://fullstackopen-cicd-njjg.onrender.com/
           max-attempts: 3
           retry-delay: 5s
