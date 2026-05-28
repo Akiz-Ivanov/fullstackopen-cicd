@@ -44,6 +44,8 @@ jobs:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           title: "✅ Deployment Successful!"
           description: |
+            **Deployment Details**
+
             **Repository:** ${{ github.repository }}
             **Branch:** ${{ github.ref_name }}
             **Commit:** ${{ github.sha }}
